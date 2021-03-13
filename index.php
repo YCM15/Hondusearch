@@ -4,7 +4,7 @@ $conexion=mysqli_connect('us-cdbr-east-03.cleardb.com', 'b5785f573142ca', 'a1bec
 /*
 si la base de datos tiene usuario y contraseña entonces seria de la siguiente forma
 $conexion=mysqli_connect('localhost', 'El usuario', 'La contraseña', 'Hondusearch') or die('Error al conectar con la base de datos');
-*/
+ss*/
 
 if($conexion){
 	$consulta = "SELECT * FROM `tipodeusuario`";
