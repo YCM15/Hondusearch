@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HonduSherch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+</style>
+</head>
+
+<body
+    style="background: rgb(39,84,114); background: linear-gradient(90deg, rgba(39,84,114,1) 0%, rgba(254,141,98,1) 59%, rgba(254,225,73,1) 100%);">
+    <div class="card" style="width: 30rem; margin-left: auto; margin-right: auto; margin-top: 50px;">
+        <img src="src/logo.png" style="margin: auto; padding: 10px; display: flex; align-items: center; justify-content: center;" alt="">
+        <div class="card-body">
+            <form>
+                <div class="form-row needs-validation" needs-validation>
+                    <div class="col-12">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Introduce tu email" class="form-control" id="email" style = "margin-bottom: 5px;" required>
+                        <div id="email" class="invalid-feedback">
+                            Por favor, ingresa un dirección de correo.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="pn">Nombre</label>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Primer nombre" class="form-control" id="pn" style = "margin-bottom: 5px;" required>
+                            <div id="pn" class="invalid-feedback">
+                                Por favor, ingresa un nombre.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Segundo nombre" class="form-control" id="sn" style = "margin-bottom: 5px;"> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Primer apellido" class="form-control" id="pa" style = "margin-bottom: 5px;">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Segundo apellido" class="form-control" id="sa" style = "margin-bottom: 5px;">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" class="form-control" id="usuario" placeholder="Introduce tu nombre de usuario" style = "margin-bottom: 5px;" required> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="password">Contraseña</label>
+                            <input type="password" placeholder="Introduce la contraseña" class="form-control" id="password" style = "margin-bottom: 5px;" required>
+                            <div id="email" class="invalid-feedback">
+                                Por favor, ingresa una contraseña.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="password1">Confirma la contraseña</label>
+                            <input type="password" placeholder="Confirma la contraseña" class="form-control" id="password1" style = "margin-bottom: 5px;" required>
+                            <div id="email" class="invalid-feedback">
+                                Por favor, repita su contraseña.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Introduce el número telefónico" style = "margin-bottom: 5px;" required>
+                    <div id="email" class="invalid-feedback">
+                        Por favor, ingresa un número telefonico.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary form-control" style = "margin-top: 5px; background-color: #275472; border-color: #275472;">Sign in</button>
+            </form>
+            <br>
+            <div class="form-inline" style="  display: flex; align-items: center; justify-content: center;">
+                <p style="padding:3px; font-size: small;text-align: center; display: inline-block; ">¿Ya tienes cuenta?</p>
+                <p><a style="padding:3px; font-size:small; text-align: center; display: inline-block;"
+                        href="#">Incia sesión</a></p>
+            </div>
+        </div>
+    </div>
+    <br>
