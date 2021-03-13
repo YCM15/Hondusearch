@@ -69,6 +69,8 @@ body {
 
 .bienvenida { 
     height: 280px; 
+    right: 400px;
+    text-align: center;
     background: url(../imagen/team.png) no-repeat  right top;
     color: rgb(230, 255, 4);
     font-size: 30px;
@@ -118,7 +120,8 @@ body {
         }
 
     .servicios {
-        background: #132f4b;
+      height: 280;
+        background: #f56301;
         color:  rgb(251, 255, 6);
         height: 450px;
     }
@@ -137,10 +140,17 @@ body {
     }
 
     .entrega {
-        background: url(../imagen/eee.jpg) no-repeat center  top;
-        background-size: cover; 
-        color: rgb(251, 255, 6);
+       
+      background-size: cover; 
+      
+      height: 280px; 
+      right: 400px;
+      text-align: center;
+      background-color: #04406e;
+      background: url(../imagen/1.jpg) no-repeat  right top;
+      color: rgb(230, 255, 4);
     }
+
        
         .contain {
           max-width: 1055px; 
@@ -179,7 +189,7 @@ body {
     left: 0; 
     border-radius: 60%; 
     z-index: 0; 
-    background: rgb(250, 135, 3); 
+    background: rgb(86, 57, 247); 
     width: 140px; 
     height: 140px;
 }
