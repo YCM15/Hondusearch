@@ -19,7 +19,4 @@ if($conexion){
 }else{
 	echo 'incorrecto';
 }
-
-
-	//echo "here I go again on my own";
 ?>
