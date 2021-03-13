@@ -19,14 +19,7 @@ body {
       align-items: center; 
    }
 
-  .entrega { 
-      text-align: right; 
-    }
-      
-      .entrega p{
-        text-align: right;   
-      }
-
+  
 
   .list-services {
       display: flex; 
@@ -43,7 +36,7 @@ body {
 
 .list-seguir {
     display: flex; 
-     justify-content: center;
+     justify-content: left;
   }
 
 
@@ -68,14 +61,22 @@ body {
 }
 
 .bienvenida { 
-    height: 280px; 
-    right: 400px;
-    text-align: center;
+  height: 280px; 
+  right: 400px;
     background: url(../imagen/team.png) no-repeat  right top;
-    color: rgb(230, 255, 4);
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+     
  
+}
+
+.bienvenida h2{
+ 
+  text-align: 200px;
+  color:  rgb(251, 255, 8);
+  font-size: 50px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  left: -300px;
+  
 }
 
 
@@ -84,20 +85,27 @@ body {
     padding: 0 20px; 
     color: rgb(255, 255, 255); 
     text-decoration: none; 
+   
     
 }
 
-  .title {margin-bottom: 40px; 
+  .title {
+    margin-bottom: 40px; 
     font: 60px 'Stint Ultra Condensed'; 
     text-transform: uppercase;
 
 }
 
+.titulo{
+  margin-bottom: 10px; 
+    font: 30px 'Stint Ultra Condensed'; 
+    
+}
 
 
 
 .seguir{
-    text-align: center;
+    text-align: left;
     font-size: 0px;
 }
 
@@ -110,7 +118,9 @@ body {
         background: #04406e;
         color: rgb(251, 255, 6);
         height: 300px;
+       
     }
+
 
       .quienes p { 
           max-width: 1050px; 
@@ -139,40 +149,40 @@ body {
       
     }
 
-    .entrega {
+
+.entrega {
        
-      background-size: cover; 
-      
-      
-      text-align: right;
-      background-color: #04406e;
-      background: #04406e url(../imagen/1.png) no-repeat  left top;
-      color: rgb(230, 255, 4);
-    }
-
-       
-        .contain {
-          max-width: 1055px; 
-          margin: 0 auto;
-          
-        }
-
-      .entrega p {
-          max-width: 450px;
-          color: #fff;
-          text-align: right;
-          
-        }
-
-
+  background-size: cover;     
+  background: #04406e url(../imagen/1.png) no-repeat  left top;
+  color: rgb(230, 255, 4);
   
- 
-    .seguir{
-        
-        color: #fff;
-        height: 160px;
+}
+
        
-    }
+  .contain {
+    max-width: 500px; 
+    margin: 0 auto;
+    
+  }
+      .contain h2 {
+        position: relative;
+        left: 400px;
+      }
+
+      .contain p {
+        max-width: 450px;
+        color: #fff;
+        position: relative;
+        left: 400px;
+        
+      }
+
+
+ 
+.seguir{       
+  color: #fff;
+  height: 70px;
+}
 
 
 /* 4 LIST  */
@@ -213,5 +223,6 @@ body {
     
   .list-seguir figure { 
     position: relative; 
+    left: -60px;
 
   }
