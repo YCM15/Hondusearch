@@ -4,7 +4,7 @@
 body { 
   text-align: center; 
   font:300 20px/1.7 'Roboto Condensed';
-  background:url(../imagen/fondo.jpg);
+  background: linear-gradient(to right, rgba(39,84,114,1) 0%, rgba(254,141,98,1) 59%, rgba(254,225,73,1) 100%);
 }
 
   .logo { 
@@ -55,7 +55,7 @@ body {
   }
     
   .navbar { height: 40px; 
-    background:#4c5053; 
+    
     text-align: center;
 }
 
@@ -68,21 +68,14 @@ body {
 }
 
 .bienvenida { 
-    height: 220px; 
-    text-align: center;
-    background: url(../imagen/bienvenid.jpg)  center top ;
+    height: 280px; 
+    background: url(../imagen/team.png) no-repeat  right top;
     color: rgb(230, 255, 4);
-    font-size: 50px;
-    font-family: fantasy;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
  
 }
 
-.bienvenida p{
-  color: #fff;
-  font-size: 25px;
-  font-family: serif;
- 
-}
 
 
 .quienes{ 
@@ -182,21 +175,22 @@ body {
 
   .list-services figure:after {content: ""; 
     position: absolute; 
-    top: 0; left: 0; 
-    border-radius: 50%; 
+    top: 0; 
+    left: 0; 
+    border-radius: 60%; 
     z-index: 0; 
-    background: #fff; 
-    width: 150px; 
-    height: 150px;
+    background: rgb(250, 135, 3); 
+    width: 140px; 
+    height: 140px;
 }
 
     .list-services img {
-        position: relative; 
+        position: static; 
         z-index: 1;
     }
 
   .list-services li { 
-      padding: 0 30px; 
+      padding: 0 60px; 
     }
 
   .list-services figcaption { 
