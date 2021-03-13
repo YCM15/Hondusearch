@@ -127,7 +127,7 @@
 
 
 
-  <!-- seguir -->
+  <!-- seguisr -->
   <div class="seguir">
   <h1 class="title">Seguir</h1>
 
