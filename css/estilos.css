@@ -1,0 +1,197 @@
+
+
+/* 1 LAYOUT */
+body { 
+  text-align: center; 
+  font:300 20px/1.7 'Roboto Condensed';
+  background: #000;
+}
+
+  .logo { 
+      display: flex; 
+      justify-content: center; 
+
+    }
+
+  .navbar { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+   }
+
+  .entrega { 
+      text-align: left; 
+    }
+      
+      .entrega p{
+        text-align: left;   
+      }
+
+
+  .list-services {
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+    }
+  .list-services figure {
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-flow: column;
+    
+}
+
+.list-seguir {
+    display: flex; 
+     justify-content: center;
+  }
+
+
+/* 2 GENERIC ITEMS */
+
+  .logo { 
+      height: 200px; 
+      background-size: cover;
+  }
+    
+  .navbar { height: 40px; 
+    background:#4c5053; 
+    text-align: center;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 0 30px;
+    text-decoration: none ;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bienvenida { 
+    height: 220px; 
+    text-align: center;
+    background: url(../imagen/bienvenid.jpg)  center top ;
+    color: #fff;
+    font-size: 50px;
+    font-family: fantasy;
+ 
+}
+
+.bienvenida p{
+  color: #fff;
+  font-size: 30px;
+  font-family: serif;
+ 
+}
+
+.quienes{ 
+    padding: 0 20px; 
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    
+}
+
+  .title {margin-bottom: 40px; 
+    font: 60px 'Stint Ultra Condensed'; 
+    text-transform: uppercase;
+}
+
+  .p {
+      margin-bottom: 40px;
+}
+
+.seguir{
+    text-align: center;
+    font-size: 0px;
+}
+
+/* 3 PARTS OF WEB */
+  .content { 
+      padding: 80px 0;
+    }
+
+    .quienes {
+        background: #2c3e50; 
+        color: #fff;
+        height: 300px;
+    }
+
+      .quienes p { 
+          max-width: 1050px; 
+          margin: 0 auto;
+
+        }
+
+    .servicios {
+        background: #132f4b;
+        color: #fff;
+        height: 450px;
+    }
+
+    .entrega {
+        background: url(../imagen/eee.jpg) no-repeat center  top;
+        background-size: cover; 
+        color: #fff;
+    }
+       
+        .contain {
+          max-width: 1055px; 
+          margin: 0 auto;
+        }
+
+      .entrega p {
+          max-width: 450px;
+ 
+          
+        }
+
+
+  
+ 
+    .seguir{
+        background: #132f4b;
+        color: #fff;
+        height: 160px;
+       
+    }
+
+
+/* 4 LIST  */
+
+  .list-services figure { 
+      position: relative; 
+      width: 150px; 
+      height: 190px;
+    }
+
+  .list-services figure:after {content: ""; 
+    position: absolute; 
+    top: 0; left: 0; 
+    border-radius: 50%; 
+    z-index: 0; 
+    background: #fff; 
+    width: 150px; 
+    height: 150px;
+}
+
+    .list-services img {
+        position: relative; 
+        z-index: 1;
+    }
+
+  .list-services li { 
+      padding: 0 30px; 
+    }
+
+  .list-services figcaption { 
+      position: relative; 
+      left: 0; 
+      right: 0; 
+      bottom: -40px;
+    }
+
+    
+  .list-seguir figure { 
+    position: relative; 
+
+  }
