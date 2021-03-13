@@ -20,11 +20,11 @@ body {
    }
 
   .entrega { 
-      text-align: left; 
+      text-align: right; 
     }
       
       .entrega p{
-        text-align: left;   
+        text-align: right;   
       }
 
 
@@ -143,11 +143,10 @@ body {
        
       background-size: cover; 
       
-      height: 280px; 
-      right: 400px;
-      text-align: center;
+      
+      text-align: right;
       background-color: #04406e;
-      background: url(../imagen/1.jpg) no-repeat  right top;
+      background: #04406e url(../imagen/1.png) no-repeat  left top;
       color: rgb(230, 255, 4);
     }
 
@@ -155,12 +154,13 @@ body {
         .contain {
           max-width: 1055px; 
           margin: 0 auto;
+          
         }
 
       .entrega p {
           max-width: 450px;
           color: #fff;
- 
+          text-align: right;
           
         }
 
