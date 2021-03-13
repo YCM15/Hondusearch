@@ -63,11 +63,7 @@ body {
 .bienvenida { 
   height: 280px; 
   right: 400px;
-<<<<<<< HEAD
-    background: url(../imagen/team.png) no-repeat  right top;
-=======
     background: url(../img/team.png) no-repeat  right top;
->>>>>>> b4381ac0509a0993506169d2f8545f120976b356
      
  
 }
@@ -157,11 +153,7 @@ body {
 .entrega {
        
   background-size: cover;     
-<<<<<<< HEAD
-  background: #04406e url(../imagen/1.png) no-repeat  left top;
-=======
   background: #04406e url(../img/1.png) no-repeat  left top;
->>>>>>> b4381ac0509a0993506169d2f8545f120976b356
   color: rgb(230, 255, 4);
   
 }
