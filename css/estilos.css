@@ -1,228 +1,192 @@
-
-
 /* 1 LAYOUT */
-body { 
-  text-align: center; 
-  font:300 20px/1.7 'Roboto Condensed';
-  background: linear-gradient(to right, rgba(39,84,114,1) 0%, rgba(254,141,98,1) 59%, rgba(254,225,73,1) 100%);
+
+body {
+    text-align: center;
+    font: 300 20px/1.7 'Roboto Condensed';
+    background: linear-gradient(to right, rgba(39, 84, 114, 1) 0%, rgba(254, 141, 98, 1) 59%, rgba(254, 225, 73, 1) 100%);
 }
 
-  .logo { 
-      display: flex; 
-      justify-content: center; 
+.logo {
+    display: flex;
+    justify-content: center;
+}
 
-    }
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  .navbar { 
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-   }
+.list-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  
-
-  .list-services {
-      display: flex; 
-      align-items: center; 
-      justify-content: center;
-    }
-  .list-services figure {
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      flex-flow: column;
-    
+.list-services figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 .list-seguir {
-    display: flex; 
-     justify-content: left;
-  }
+    display: flex;
+    justify-content: left;
+}
 
 
 /* 2 GENERIC ITEMS */
 
-  .logo { 
-      height: 200px; 
-      background-size: cover;
-  }
-    
-  .navbar { height: 40px; 
-    
+.logo {
+    height: 200px;
+    background-size: cover;
+}
+
+.navbar {
+    height: 40px;
     text-align: center;
 }
 
-.navbar a{
+.navbar a {
     color: #fff;
     padding: 0 30px;
-    text-decoration: none ;
+    text-decoration: none;
     font-size: 25px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.bienvenida { 
-  height: 280px; 
-  right: 400px;
-    background: url(../img/team.png) no-repeat  right top;
-     
- 
+.bienvenida h2 {
+    text-align: 100px;
+    color: rgb(251, 255, 8);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
 }
 
-.bienvenida h2{
- 
-  text-align: 200px;
-  color:  rgb(251, 255, 8);
-  font-size: 50px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  position: relative;
-  left: -300px;
-  
+.quienes {
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-
-
-.quienes{ 
-    padding: 0 20px; 
-    color: rgb(255, 255, 255); 
-    text-decoration: none; 
-   
-    
-}
-
-  .title {
-    margin-bottom: 40px; 
-    font: 60px 'Stint Ultra Condensed'; 
+.title {
+    margin-bottom: 40px;
+    font: 60px 'Stint Ultra Condensed';
     text-transform: uppercase;
-
 }
 
-.titulo{
-  margin-bottom: 10px; 
-    font: 30px 'Stint Ultra Condensed'; 
-    
+.titulo {
+    margin-bottom: 10px;
+    font: 30px 'Stint Ultra Condensed';
 }
 
-
-
-.seguir{
+.seguir {
     text-align: left;
     font-size: 0px;
 }
 
+
 /* 3 PARTS OF WEB */
-  .content { 
-      padding: 80px 0;
-    }
 
-    .quienes {
-        background: #04406e;
-        color: rgb(251, 255, 6);
-        height: 300px;
-       
-    }
-
-
-      .quienes p { 
-          max-width: 1050px; 
-          margin: 0 auto;
-          color: #fff;
-
-        }
-
-    .servicios {
-      height: 280;
-        background: #f56301;
-        color:  rgb(251, 255, 6);
-        height: 450px;
-    }
-
-    .servicios p { 
-      max-width: 1055px; 
-      margin: 0 auto;
-      color: #fff;
-      
-
-    }
-
-    .servicios figcaption { 
-       color: #fff;
-      
-    }
-
-
-.entrega {
-       
-  background-size: cover;     
-  background: #04406e url(../img/1.png) no-repeat  left top;
-  color: rgb(230, 255, 4);
-  
+.content {
+    padding: 80px 0;
 }
 
-       
-  .contain {
-    max-width: 500px; 
+.quienes {
+    background: #04406e;
+    color: rgb(251, 255, 6);
+}
+
+.quienes p {
+    max-width: 1050px;
     margin: 0 auto;
-    
-  }
-      .contain h2 {
-        position: relative;
-        left: 400px;
-      }
+    color: #fff;
+}
 
-      .contain p {
-        max-width: 450px;
-        color: #fff;
-        position: relative;
-        left: 400px;
-        
-      }
+.servicios {
+    height: 280;
+    background: #f56301;
+    color: rgb(251, 255, 6);
+    height: 450px;
+}
 
+.servicios p {
+    max-width: 1055px;
+    margin: 0 auto;
+    color: #fff;
+}
 
- 
-.seguir{       
-  color: #fff;
-  height: 70px;
+.servicios figcaption {
+    color: #fff;
+}
+
+.entrega {
+    background-size: cover;
+    background: #04406e;
+    color: rgb(230, 255, 4);
+}
+
+.contain {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contain h2 {
+    position: relative;
+    left: 400px;
+}
+
+.contain p {
+    max-width: 450px;
+    color: #fff;
+    position: relative;
+    left: 400px;
+}
+
+.seguir {
+    color: #fff;
+    height: 70px;
 }
 
 
 /* 4 LIST  */
 
-  .list-services figure { 
-      position: relative; 
-      width: 150px; 
-      height: 190px;
-    }
+.list-services figure {
+    position: relative;
+    width: 150px;
+    height: 190px;
+}
 
-  .list-services figure:after {content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    border-radius: 60%; 
-    z-index: 0; 
-    background: rgb(86, 57, 247); 
-    width: 140px; 
+.list-services figure:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 60%;
+    z-index: 0;
+    background: rgb(86, 57, 247);
+    width: 140px;
     height: 140px;
 }
 
-    .list-services img {
-        position: static; 
-        z-index: 1;
-    }
+.list-services img {
+    position: static;
+    z-index: 1;
+}
 
-  .list-services li { 
-      padding: 0 60px; 
-    }
+.list-services li {
+    padding: 0 60px;
+}
 
-  .list-services figcaption { 
-      position: relative; 
-      left: 0; 
-      right: 0; 
-      bottom: -40px;
-    }
+.list-services figcaption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+}
 
-    
-  .list-seguir figure { 
-    position: relative; 
+.list-seguir figure {
+    position: relative;
     left: -60px;
-
-  }
+}
