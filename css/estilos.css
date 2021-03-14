@@ -49,11 +49,17 @@ body {
 }
 
 .navbar a {
-    color: #fff;
+    color: white;
     padding: 0 30px;
     text-decoration: none;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: .5s;
+    border-radius: 15px;
+}
+
+.navbar a:hover {
+    background-color: rgba(55, 198, 255, 0.466);
 }
 
 .bienvenida h2 {
