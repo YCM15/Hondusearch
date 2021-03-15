@@ -82,6 +82,7 @@
     	(()=>{
     		$.post('../Ajax/php/desarrolladorPerfil.php', function(data){
     			json = JSON.parse(data);
+				console.log(data);
                 document.getElementById("profile").innerHTML = json.informacion;
                 document.getElementById("nombreCompleto").innerHTML = json.nombre;
                 document.getElementById('usuario').innerHTML = json.usuario;
