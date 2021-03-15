@@ -2,13 +2,7 @@
 
 session_start();
 
-
-$conexion=mysqli_connect('localhost', 'root', '', 'Hondusearch') or die('Error al conectar con la base de datos');
-
-/*
-si la base de datos tiene usuario y contraseña entonces seria de la siguiente forma
-$conexion=mysqli_connect('localhost', 'El usuario', 'La contraseña', 'Hondusearch') or die('Error al conectar con la base de datos');
-*/
+include 'conexion.php';
 
 $nombreCompleto = '';
 $informacion = '';
