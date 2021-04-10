@@ -1,7 +1,7 @@
 <?php 
     include ('../Ajax/php/redirigir.php');
  ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -94,6 +94,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/bootstrap.min.js "></script>
     <script src="../js/fontawesome-all.min.js "></script>
     <script src="../js/jquery.js "></script>
     <script src="../js/validar.js"></script>
@@ -132,7 +133,7 @@
                         console.log(msg);
                         json = JSON.parse(msg);
                         if (json.status) {
-                            window.location = json.url;
+                            location = json.url;
                         } else {
                             document.getElementById("msg").innerHTML = `<div class="alert alert-danger">${json.mensaje}</div>`;
 
