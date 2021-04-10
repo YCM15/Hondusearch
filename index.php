@@ -54,7 +54,7 @@
   </div>
 
 
-  <!-- quienes somoss -->
+  <!-- quienes somos -->
   <div class="row">
     <div class="col-md-12">
       <div class="quienes">
