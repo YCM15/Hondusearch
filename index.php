@@ -31,7 +31,7 @@
     <a href="./"> Inicio </a>
     <a href="#"> Quiénes Somos </a>
     <a href="#"> Servicios </a>
-    <a href="#"> Acerca de </a>
+    <a href="empleos/index.php"> Empleos</a>
     <a href="Login/login.php"> Ingresar </a>
     <a href="Login/registro.php"> Registro </a>
   </div>
