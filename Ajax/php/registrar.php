@@ -1,7 +1,5 @@
 <?php
-//se lee la cookie de sesion
 session_start();
-//se establece una conexión a la base de datos
 include 'conexion.php';
 $usuario=mysqli_real_escape_string($conexion, $_POST['usuario']);
 $contrasenia=password_hash($_POST['password'], PASSWORD_DEFAULT);
@@ -27,13 +25,13 @@ if($fila2['total']!=0){//si el usuario ya está registrado
 }
 }else{
 
-$insertPersona=mysqli_query($conexion, 'INSERT INTO persona(idPersona, primerNombre , segundoNombre , primerApellido, segundoApellido) VALUES ("'.$idRandom.'", "'.$_POST['pn'].'", "'.$_POST['sn'].'", "'.$_POST['pa'].'", "'.$_POST['sa'].'")')
+$insertPersona=mysqli_query($conexion, 'INSERT INTO persona(idPersona, primerNombre , segundoNombre , primerApellido, segundoApellido,idcorreo,idtelefono) VALUES ("'.$idRandom.'", "'.$_POST['pn'].'", "'.$_POST['sn'].'", "'.$_POST['pa'].'", "'.$_POST['sa'].'","'.$idRandom.'","'.$idRandom.'")')
 or die('<p>Error al registrar persona</p><br>'.mysqli_error($conexion));
 
-$insertCorreo=mysqli_query($conexion, 'insert into correo(idCorreo, correo, idPersona) values('.$idRandom.',"'.$_POST['correo'].'","'.$idRandom.'")')
+$insertCorreo=mysqli_query($conexion, 'insert into correo(idCorreo, correo) values('.$idRandom.',"'.$_POST['correo'].'")')
 or die('<p>Error al registrar correo</p><br>'.mysqli_error($conexion));
 
-$insertTelefono=mysqli_query($conexion, 'insert into telefono(idTelefono, numeroTelefono, idPersona) values('.$idRandom.',"'.$_POST['telefono'].'","'.$idRandom.'")')
+$insertTelefono=mysqli_query($conexion, 'insert into telefono(idTelefono, numeroTelefono) values('.$idRandom.',"'.$_POST['telefono'].'")')
 or die('<p>Error al registrar telefono</p><br>'.mysqli_error($conexion));
 
 $insertUsuario=mysqli_query($conexion, 'INSERT INTO `usuario` (`idUsuario`, `usuario`, `contrasenia`, `idTipoDeUsuario`, `idPersona`) VALUES ("'.$idRandom.'", "'.$usuario.'", "'.$contrasenia.'", "'.$tipousuario.'", "'.$idRandom.'")')
