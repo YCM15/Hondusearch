@@ -29,7 +29,7 @@
   <div class=" navbar nav ">
 
     <a href="./"> Inicio </a>
-    <a href="#"> Quiénes Somos </a>
+    <a href="#"> Quiénes somos </a>
     <a href="#"> Servicios </a>
     <a href="empleos/index.php"> Empleos</a>
     <a href="Login/login.php"> Ingresar </a>
