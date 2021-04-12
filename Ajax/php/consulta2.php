@@ -6,7 +6,7 @@ $consulta1 = "SELECT * FROM  `empleo`";
 $result1 = $conexion->query($consulta1);
 
 while($fila1 = $result1->fetch_assoc()){
-    if($fila1["nombre"]==0){
+    
         $solicitud .= '
         <div class="card mt-3 col-md-5 p-2 offset-md-1">
         <div class="card-header text-black-50">
@@ -21,7 +21,7 @@ while($fila1 = $result1->fetch_assoc()){
         </div>
     </div>';
         
-    }
+    
 }
 
 echo $solicitud;
