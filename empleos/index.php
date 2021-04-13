@@ -32,8 +32,8 @@
         <a href="#"> Quiénes Somos </a>
         <a href="#"> Servicios </a>
         <a href="index.php"> Empleos</a>
-        <a href="..Login/login.php"> Ingresar </a>
-        <a href="..Login/registro.php"> Registro </a>
+        <a href="../Login/login.php"> Ingresar </a> 
+        <a href="../Login/registro.php"> Registro </a>
     </div>
     </p>
     <div class="container mt-5">
