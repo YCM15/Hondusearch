@@ -18,8 +18,8 @@
 
 <body>
   <!--logo -->
-  <header style='marging-top: 10px' class="logo container"> 
-    <h1>
+  <header class="logo container"> 
+    <h1 style='marging-top: 10px'>
       <img src="img/logo.png" class="img img-fluid" alt=" Logotipo de Fazt ">
     </h1>
   </header>
