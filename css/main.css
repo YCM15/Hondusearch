@@ -1,0 +1,38 @@
+.box {
+    background: linear-gradient(to right, rgba(39, 84, 114, 1), rgba(254, 141, 98, 1), rgba(254, 225, 73, 1));
+    font-family: "Raleway";
+    height: 300px;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../Fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "HammersmithOne";
+    src: url("../Fonts/Hammersmith_One/HammersmithOne-Regular.ttf");
+}
+
+.navi {
+    font-family: "HammersmithOne";
+}
+
+.container {
+    font-family: "Raleway";
+}
+
+.colornav {
+    color: #EB6555
+}
+
+.embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+.cajita {
+    border-top-color: #CC0000;
+    border-right-color: blue;
+    border-bottom-color: #00FF00;
+    border-left-color: #CCC;
+}

@@ -10,6 +10,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HonduSherch</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand colornav" href="../" style="color:#6C34F5 ;"><img src="../img/logo.jpeg"  class="img img-fluid" style="height:60px;"></a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav float-left">
+            </div>
+        </div>
+    </nav>
+
+
+
 </head>
 </style>
 </head>

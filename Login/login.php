@@ -12,6 +12,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand colornav" href="../" style="color:#6C34F5 ;"><img src="../img/logo.jpeg"  class="img img-fluid" style="height:60px;"></a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav float-left">
+            </div>
+        </div>
+
+    </nav>
+
+
 </head>
 </style>
 </head>
@@ -41,7 +52,7 @@
             <div div class="card" style="width: 25rem; margin-left: auto; margin-right: auto; margin-top: 10px; padding-top: 10px;">
                 <div class="form-inline" style="  display: flex; align-items: center; justify-content: center;">
                     <p style="padding:3px; font-size: small;text-align: center; display: inline-block; ">¿No tienes cuenta? </p>
-                    <p><a style="padding:3px; font-size:small; text-align: center; display: inline-block;" href="registro.html"> Regístrate</a></p>
+                    <p><a style="padding:3px; font-size:small; text-align: center; display: inline-block;" href="registro.php"> Regístrate</a></p>
                 </div>
             </div>
         <script src="../js/fontawesome-all.min.js "></script>

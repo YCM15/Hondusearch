@@ -8,134 +8,84 @@
   <title>HONDU SEARCH</title>
 
   <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/estilos.css">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand colornav" href="#" style="color:#6C34F5 ;"><img src="img/logo.jpeg"  class="img img-fluid" style="height:60px;"></a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav float-left">
+            </div>
+        </div>
+
+        <span class="navbar-text">
+                <button type="button" class="btn btn-outline-primary "  onclick="dirigir()" id="btn1" >Ingresar</button>
+                <button type="button" class="btn btn-outline-primary "  onclick="dirigir1()" id="btn1" >Ofertas De Empleos</button>
+                
+        </span>
+    </nav>
 
 </head>
 
 <body>
-  <!--logo -->
-  <header class="logo container"> 
-    <h1>
-      <img src="img/logo.png" class="img img-fluid" alt=" Logotipo de Fazt ">
-    </h1>
-  </header>
-
-  <p>
-    <!-- NAVEGACION -->
-  <div class=" navbar nav ">
-
-    <a href="./"> Inicio </a>
-    <a href="#"> Quiénes Somos </a>
-    <a href="#"> Servicios </a>
-    <a href="empleos/index.php"> Empleos</a>
-    <a href="Login/login.php"> Ingresar </a>
-    <a href="Login/registro.php"> Registro </a>
-  </div>
-  <!-- BIENVENIDA -->
-  <div class="container mt-5 bienvenida">
-    <div class="row mt-5 mb-5">
-      <div class="col-md-6 mt-5">
-        <table width="380" cellspacing="2" cellpadding="3" borde="0">
-          <tr>
-            <td>
-              <h2 class="title">La manera correcta de hacer negocios </h2>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="./img/team.png">
-      </div>
+    <div class="container">
+        <div class="row mt-1">
+        <div class="col-md-2"></div>
+            <div class="col-md-8  col-sm-12  col-xs-12 mt-1">
+                <div class="row">
+                    <div class="col-md-6 col-xs-7 imagen">
+                        <img  style="color:#6C34F5 ;" src="img/lading.svg" class="img-fluid ml-5 im" alt="Cinque Terre" width="304" height="336">
+                    </div>
+                    <div class="col-md-5 col-xs-12 ml-1 col-sm-12  col-xs-5 mx-auto" style="margin-top:150px;">
+                        <h3 style="color:#6C34F5" class="mt-5">HONDU SEARCH</h3>
+                        <h6>es bolsa de trabajo líder en Honduras. Sube tu currículum, consulta las miles de oferta de trabajo y encuentra el mejor empleo de Honduras</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="box mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-2 text-center text-white mb-3 col-sm-12 col-xs-12">
+                    <h4>Visión</h4>
+                    <p class="mt-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim itaque similique impedit eligendi voluptatibus cupiditate praesentium fuga aut et facilis quaerat, quas minima. Autem laborum sed illum, minima molestiae ut!</p>
 
-
-  <!-- quienes somos -->
-  <div class="row">
-    <div class="col-md-12">
-      <div class="quienes">
-        <h2 class="title">Quienes Somos</h2>
-        <p>Desde sus comienzos en el año2000, HONDU SEARCH es conocido por su compromiso auténtico
-          con la satisfacción del cliente. Este estándar de excelencia nos ha permitido
-          crecer hasta llegar a donde estamos ahora.</p>
-
-        <p> Nuestros clientes son lo principal para nosotros y para ellos tenemos servicios y
-          productos excepcionales. Contáctanos para saber más acerca de lo que ofrecemos.</p>
-      </div>
+                </div>
+                <div class="col-md-6 mt-2 text-center text-white mb-3 col-sm-12 col-xs-12">
+                    <h4>Misión</h4>
+                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quo autem, accusantium qui ratione laborum tenetur reprehenderit impedit ipsa sapiente eligendi nam blanditiis alias facere mollitia vero numquam. Libero, animi!</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="Iconos mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center col-sm-8">
+                    <img src="./img/cloud-1835332_1920.png" style="width:300px; height:300px" class=" img img-fluid ">
+                    <h4>Encuesta</h4>
+                    <p class="mt-1 ">Estamos aquí para servirte</p>
+                </div>
+                <div class="col-md-4 text-center col-sm-8 ">
+                    <img src="./img/html5-386614_1920.jpg " style="width:300px; height:300px" class="img img-fluid ">
+                    <h4>Ordena</h4>
+                    <p class="mt-1 ">Queremos que todos nuestros clientes puedan experimentar el nivel de profesionalismo de
+          nuestro equipo al colaborar con HONDU SEARCH</p>
+                </div>
+                <div class="col-md-4 text-center col-sm-8">
+                    <img src="./img/php-151199.svg" style="width:300px; height:300px" class=" img img-fluid ">
+                    <h4>Encuesta</h4>
+                    <p class="mt-1 ">Tenemos los mejores productos y nuestra atención al cliente es incomparable</p>
+                </div>
 
-
-  </div>
-
-
-
-
-
-  <!-- servicios -->
-  <div>
-
-    <div class="row">
-      <div class="servicios">
-        <h2 class="title">Nuestros Servicios</h2>
-        <p>superamos tus expectativas</p>
-
-
-        <ul class="list-services col-md-12">
-          <li>
-            <figure>
-              <img src="img/servicio.png" alt="" width="100" height="100">
-              <figcaption>Desarrollador web</figcaption>
-            </figure>
-          </li>
-
-
-
-          <ul class="list-services col-md-4">
-            <li>
-              <figure>
-                <img src="img/Background (4).png" alt="" width="90" height="100">
-                <figcaption>Desarrollador desktop</figcaption>
-              </figure>
-            </li>
-
-            <ul class="list-services col-md-4">
-              <li>
-                <figure>
-                  <img src="img/movil.png" alt="" width="90" height="100">
-                  <figcaption>Desarrollador movil o apps</figcaption>
-                </figure>
-              </li>
-
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-
-
-  <!-- entrega -->
-  <div class="entrega row ">
-      <div class="col-md-6">
-        <img class="img img-fluid" src="./img/1.png">
-      </div>
-      <div class="col-md-6">
-        <h2 class="title">Entrega programada</h2>
-        <p class="text-white">Estamos aquí para servirte</p>
-        <p class="text-white">Queremos que todos nuestros clientes puedan experimentar el nivel de profesionalismo de
-          nuestro equipo al colaborar con HONDU SEARCH. La razón de ser de nuestros servicios,
-          especialmente de este, es mejorar tu vida.
-        <p class="text-white">Tenemos los mejores productos y nuestra atención al cliente es incomparable.</p>
-      </div>
-  </div>
-
-
-
-  </div>
-
-</footer>
+    </footer>
 <footer class="text-center text-white" style="background-color: #caced1;">
   <!-- Grid container -->
   <div class="container p-4">
@@ -224,8 +174,15 @@
   </div>
   <!-- Copyright -->
 </footer>
-
-
 </body>
+<script>
+function dirigir(){
+  window.location='Login/login.php'
 
+}
+
+function dirigir1(){
+  window.location='empleos/'
+}
+</script>
 </html>
