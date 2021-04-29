@@ -64,7 +64,7 @@
                                         <input type="text" required=" " class="form-control" id="pregunta2" aria-describedby="emailHelp">
                                         <div class="mb-2">
                                             <h6>adjunto  curriculum vitae </h6>
-                                            <input type="file" required=" " class="form-control" id="correo" aria-describedby="emailHelp">
+                                            <input type="file" required=" " class="form-control" id="currilum" aria-describedby="emailHelp">
                                         </div>
                                         <span id="msg" class="mt-2 mb-2"></span>
                                         <button type="button" onclick="enviar()" class="btn btn-primary">Enviar </button>
@@ -81,8 +81,17 @@
             <script src="../js/sweetalert.min.js"></script>
             <script>
                 $(document).ready(function() {
+                    console.log("inicio");
                     consulta()
                 });
+                var ide;
+                
+                function idEmpleo(id){
+                    $("#pregunta1").val('');
+                    $("#pregunta2").val('');
+                    document.getElementById("msg").innerHTML = '';
+                    ide = id;
+                }
 
                 function consulta() {
                     $.ajax({
@@ -102,7 +111,6 @@
                             'lenguaje': lenguaje
                         }
                     }).done(function(msg) {
-                        console.log(msg)
                         if (parseInt(msg) == 1) {
                             $('#modal').modal('show')
                         } else {
@@ -130,6 +138,56 @@
                     }
 
                 }
+
+
+            function enviar(){
+                let pregunta1 = $("#pregunta1").val();
+                let pregunta2 = $("#pregunta2").val();
+                if(pregunta1 && pregunta2){
+                    const currilum = document.querySelector("#currilum");
+                    longitud = currilum.files.length;
+                    if (longitud == 1 && currilum.files[0].type == "application/pdf") {
+                            let formData = new FormData();
+                            formData.append("archivo", currilum.files[0]); // En la posición 0; es decir, el primer elemento
+                            fetch("../Ajax/php/guardarCurriculum.php", {
+                                method: 'POST',
+                                body: formData,
+                            })
+                                .then(respuesta => respuesta.text())
+                                .then(decodificado => {
+                                    json = JSON.parse(decodificado);
+                                    if(json.status){
+                                        $.ajax({
+                                            method: "POST",
+                                            url: "../Ajax/php/agregarAspirante.php",
+                                            data: {
+                                                pregunta1,
+                                                pregunta2,
+                                                idEmpleo:ide
+                                            }
+                                        }).done(function(msg) {
+                                            json = JSON.parse(msg);
+                                            if(json.status){
+                                                document.getElementById("msg").innerHTML = `<div class="alert alert-primary">${json.msg}</div>`;
+                                            } else {
+                                                document.getElementById("msg").innerHTML = `<div class="alert alert-danger">${json.msg}</div>`;        
+                                            }
+                                        });
+                                    }else{
+                                        document.getElementById("msg").innerHTML = `<div class="alert alert-danger">Error al enviar la solicitud</div>`;
+                                    }
+                                });    
+                        
+                    } else {
+                        // El usuario no ha seleccionado archivos
+                        document.getElementById("msg").innerHTML = `<div class="alert alert-danger">Debe elegir un archivo pdf</div>`;
+                    }
+                } else {
+                    document.getElementById("msg").innerHTML = `<div class="alert alert-danger">Por favor llene todo los campos</div>`;
+                }
+                    
+            }
+
 
                 function dirigir() {
                     window.location = '../Login/login.php'

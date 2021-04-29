@@ -1,4 +1,18 @@
 
+<?php 
+        session_start();
+if (isset($_SESSION["sesion"])) {
+    $nivel = $_SESSION["sesion"]["nivel"];
+    if($nivel == 2){
+        header("location: ../cliente/");
+    }else if($nivel == 3){
+        header("location: ../admon/");
+    }
+} else {
+    header("location: ../");
+}
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +51,7 @@
 	</nav>
 	<!-- NavBar-->
 
-	<div class="container mt-5 pt-5 perfil" style="color:white;">
+	<div class="container mt-5 pt-5 perfil" style="">
         <div class="container">
             <div class="row">
             	<div class="col-md-3 mb-sm-3 mb-3">
@@ -81,6 +95,7 @@
     <script type="text/javascript">
     	(()=>{
     		$.post('../Ajax/php/desarrolladorPerfil.php', function(data){
+                
     			json = JSON.parse(data);
                 document.getElementById("profile").innerHTML = json.informacion;
                 document.getElementById("nombreCompleto").innerHTML = json.nombre;

@@ -1,3 +1,19 @@
+<?php 
+    session_start();
+if (isset($_SESSION["sesion"])) {
+    $nivel = $_SESSION["sesion"]["nivel"];
+    if($nivel==1){
+        header("location: ../desarrollador/");
+    }else if($nivel == 3){
+        header("location: ../admon/");
+    }
+} else {
+    header("location: ../");
+}
+ ?>
+}
+}
+
 <!DOCTYPE html>
 <html lang="en">
 
