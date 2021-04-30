@@ -166,7 +166,7 @@ if (isset($_SESSION["sesion"])) {
 					        labels: ['Empleos', 'Developers'],
 					        datasets: [{
 					            label: 'Empleos vs Desarrolladores',
-					            data: [json.des, json.emp],
+					            data: [json.emp, json.des],
 					            backgroundColor: [
 					                'rgba(255, 99, 132, 0.5)',
 					                'rgba(54, 162, 235, 0.5)'
