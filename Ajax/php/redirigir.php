@@ -7,7 +7,7 @@ if (isset($_SESSION["sesion"])) {
     }else if($nivel == 2){
         header("location: ../Cliente/");
     }else if($nivel == 3){
-        header("location: ../admon/");
+        header("location: ../Admi/");
     }
 }
  ?>
