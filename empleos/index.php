@@ -21,8 +21,8 @@
         </div>
 
         <span class="navbar-text">
-            <button type="button" class="btn btn-outline-primary " onclick="dirigir()" id="btn1">Ingresar</button>
-            <button type="button" class="btn btn-outline-primary " onclick="dirigir1()" id="btn1">Registrese</button>
+            <button type="button" class="btn btn-outline-primary ml-2 " onclick="dirigir()" id="btn1">Ingresar</button>
+            <button type="button" class="btn btn-outline-primary ml-2 " onclick="dirigir1()" id="btn1">Registrese</button>
 
         </span>
     </nav>
@@ -81,7 +81,6 @@
             <script src="../js/sweetalert.min.js"></script>
             <script>
                 $(document).ready(function() {
-                    console.log("inicio");
                     consulta()
                 });
                 var ide;

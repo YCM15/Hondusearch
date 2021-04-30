@@ -44,6 +44,7 @@ if (isset($_SESSION["sesion"])) {
 			  <ul class="dropdown-menu dropdown-menu-lg-end">
 			  	<li><a class="dropdown-item" type="button" href="./">Perfil</a></li>
 			    <li><a class="dropdown-item" type="button" href="../Ajax/php/cerrarsesion.php">Cerrar Sesion</a></li>
+                
 			  </ul>
 			</div>
 	  </div>
@@ -51,7 +52,7 @@ if (isset($_SESSION["sesion"])) {
 	</nav>
 	<!-- NavBar-->
 
-	<div class="container mt-5 pt-5 perfil" style="">
+	<div class="container mt-5 pt-5 perfil" >
         <div class="container">
             <div class="row">
             	<div class="col-md-3 mb-sm-3 mb-3">

@@ -1,16 +1,16 @@
-<?php 
-    session_start();
+<?php
+session_start();
 if (isset($_SESSION["sesion"])) {
     $nivel = $_SESSION["sesion"]["nivel"];
-    if($nivel==1){
+    if ($nivel == 1) {
         header("location: ../desarrollador/");
-    }else if($nivel == 3){
+    } else if ($nivel == 3) {
         header("location: ../admon/");
     }
 } else {
     header("location: ../");
 }
- ?>
+?>
 }
 }
 
@@ -54,7 +54,7 @@ if (isset($_SESSION["sesion"])) {
     </nav>
     <!-- NavBar-->
 
-    <div class="container mt-5 pt-5 perfil" style="color:white;">
+    <div class="container mt-5 pt-5 perfil" style="color:black;">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 mb-sm-3 mb-3">
@@ -124,8 +124,16 @@ if (isset($_SESSION["sesion"])) {
                                 <input type="text" required=" " class="form-control" id="nombre" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-2">
-                                <h6>Conocimiento En </h6>
-                                <input type="text" required=" " class="form-control" id="datos" aria-describedby="emailHelp">
+                                    <label for="exampleInputPassword1">Conocimiemto en </label>
+                                    <select required=" " id="datos" class="form-select form-control" aria-label="Default select example">
+                                        <option value="Java">Java</option>
+                                        <option value="python">python</option>
+                                        <option value="Javascript">Javascript</option>
+                                        <option value="C++">C++</option>
+                                        <option value="Ruby">Ruby</option>
+                                        <option value=".NET">.NET</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="mb-2">
                                 <h6>Correo </h6>
@@ -147,10 +155,22 @@ if (isset($_SESSION["sesion"])) {
     <!--JQuery-->
     <script src="../js/jquery.js"></script>
     <script src="../js/validar.js"></script>
+    <script type="text/javascript">
+        (() => {
+            $.post('../Ajax/php/desarrolladorPerfil.php', function(data) {
+
+                json = JSON.parse(data);
+                document.getElementById("profile").innerHTML = json.informacion;
+                document.getElementById("nombreCompleto").innerHTML = json.nombre;
+                document.getElementById('usuario').innerHTML = json.usuario;
+            });
+        })();
+    </script>
     <script>
-    $(document).ready(function(){
-        consulta()
-    });
+        $(document).ready(function() {
+            consulta()
+        });
+
         function ventanamodal() {
             console.log("he");
             $('#modal').modal('show')
@@ -164,7 +184,8 @@ if (isset($_SESSION["sesion"])) {
                 var descripcion = document.getElementById("descripcion").value;
                 var sueldo = document.getElementById("sueldo").value;
                 var titulo = document.getElementById("titulo").value;
-                var datos = document.getElementById("datos").value;
+                var combo = document.getElementById('datos');
+                var datos = combo.options[combo.selectedIndex].text;
                 var correo = document.getElementById("correo").value;
                 $.ajax({
                     method: "POST",
@@ -179,6 +200,7 @@ if (isset($_SESSION["sesion"])) {
                     }
                 }).done(function(msg) {
                     console.log(msg);
+                    consulta()
                     json = JSON.parse(msg);
                     if (json.status) {
                         document.getElementById("msg").innerHTML = `<div class="alert alert-primary" role="alert">
@@ -206,13 +228,13 @@ if (isset($_SESSION["sesion"])) {
 
         }
 
-        function consulta(){
+        function consulta() {
             $.ajax({
-                    method: "POST",
-                    url: "../Ajax/php/consulta1.php"
-                }).done(function(msg) {
-                    document.getElementById("contact").innerHTML =msg;
-                });
+                method: "POST",
+                url: "../Ajax/php/consulta1.php"
+            }).done(function(msg) {
+                document.getElementById("contact").innerHTML = msg;
+            });
 
         }
     </script>

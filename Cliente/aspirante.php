@@ -37,6 +37,26 @@
         </div>
     </nav>
     <input id="id" style="display: none;" value="<?php echo $_GET["id"]; ?>">
+    <div class="container  mt-5">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <table class="table mt-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">correo</th>
+                            <th scope="col">numero</th>
+                            <th scope="col">Hoja de vida</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="../js/jquery.js"></script>
@@ -45,17 +65,20 @@
 <script>
     $(document).ready(function() {
         tabla()
+
     });
 
     function tabla() {
         id = document.getElementById("id").value;
-        console.log(id)
+        console.log(id);
         $.ajax({
             method: "POST",
             url: "../Ajax/php/consulta3.php",
-            data:{"id":id}
+            data: {
+                "id": id
+            }
         }).done(function(msg) {
-            document.getElementById("contact").innerHTML = msg;
+            document.getElementById("tabla").innerHTML = msg;
         });
 
     }
