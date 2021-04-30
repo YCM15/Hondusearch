@@ -38,7 +38,7 @@ if (!isset($_SESSION['sesion'])){
               if($consulta_1['idTipoDeUsuario']==2){
                   $usr= array("nivel"=>2, "usuario"=>$nombre_de_usuario);
                 $_SESSION['sesion']=$usr;
-                $json = array("status"=>true, "url"=>"../cliente/");
+                $json = array("status"=>true, "url"=>"../Cliente/");
                 echo json_encode($json);
               }else{
                   if($consulta_1['idTipoDeUsuario']==3){
